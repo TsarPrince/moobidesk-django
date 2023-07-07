@@ -29,7 +29,7 @@ ALLOWED_HOSTS = [
     'moobidesk-backend.onrender.com',
 ]
 CORS_ALLOWED_ORIGINS = [
-    'https://moobidesk-backend.onrender.com',
+    'https://moobidesk.vercel.app',
     'http://localhost:8080',
 ]
 
