@@ -28,6 +28,10 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'moobidesk-backend.onrender.com',
 ]
+CORS_ALLOWED_ORIGINS = [
+    'https://moobidesk-backend.onrender.com',
+    'http://localhost:8080',
+]
 
 
 # Application definition
@@ -39,10 +43,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'api'
+    'api',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
