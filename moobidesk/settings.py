@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-+_+$dy%%#*(shrr!18544o19-j$08+!kc5f&&rg99bu%*73@9g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'moobidesk-backend.onrender.com',
+]
 
 
 # Application definition
