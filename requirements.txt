@@ -2,3 +2,4 @@ gpt_index==0.4.24
 langchain==0.0.153
 python-dotenv==1.0.0
 django
+gunicorn
